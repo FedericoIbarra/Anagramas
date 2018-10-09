@@ -4,17 +4,17 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println("Permuttation: " + checkPermutation("abc", "cba"));
-        System.out.println("Permuttation: " + checkPermutation("Holaas", "odum"));
-        System.out.println("Permuttation: " + checkPermutation("listen", "silenv"));
+        System.out.println("Brute Force: " + anagramaBruteForce("abc", "cba"));
+        System.out.println("Brute Force: " + anagramaBruteForce("listen", "silent"));
+        System.out.println("Brute Force: " + anagramaBruteForce("listen", "silenv"));
 
-        System.out.println("Permuttation: " + anagramaXor("abc", "cba"));
-        System.out.println("Permuttation: " + anagramaXor("Hola mundo", "odum"));
-        System.out.println("Permuttation: " + anagramaXor("listen", "silenv"));
+        System.out.println("Xor: " + anagramaXor("abc", "cba"));
+        System.out.println("Xor: " + anagramaXor("listen", "listen"));
+        System.out.println("Xor: " + anagramaXor("listen", "silenv"));
     }
 
 
-    public static boolean checkPermutation (String a, String b) {
+    public static boolean anagramaBruteForce (String a, String b) {
 
         boolean aux = false;
 
